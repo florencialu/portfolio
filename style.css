@@ -1,0 +1,326 @@
+@font-face {
+  font-family: CrimsonText-Regular;
+  src: url(fonts/Crimson_Text/CrimsonText-Regular.ttf);
+}
+
+@font-face {
+  font-family: CrimsonText-Italic;
+  src: url(fonts/Crimson_Text/CrimsonText-Italic.ttf);
+}
+
+@font-face {
+  font-family: PlayfairDisplay-Italic;
+  src: url(fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: PlayfairDisplay-Regular;
+  src: url(fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+#italic {
+  font-size: 100px;
+  font-family: PlayfairDisplay-Italic;
+  font-weight: 400;
+}
+
+body {
+  background: linear-gradient(to bottom, #131313, #4061A4,  #131313);
+  margin: 120px;
+  margin-bottom:100px;
+  text-align: center;
+  color: #F3EEE8 ;
+  font-family: CrimsonText-Regular;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 940px;
+  height: 150px;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: inline-block;  
+  margin-bottom: -4px;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: PlayfairDisplay-Regular;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 70px;
+  font-family: PlayfairDisplay-Regular;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 40px;
+  font-family: PlayfairDisplay-Regular;
+  font-weight: 400;
+}
+
+h4{
+  font-size: 30px;
+  font-family: CrimsonText-Regular;
+  font-weight: 400;
+}
+
+p{
+  font-size: 20px;
+  font-family: CrimsonText-Regular;
+  font-weight: 400;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  position: relative;
+}
+
+.navmenulist {
+  list-style: none;
+  position: relative;
+  flex-direction: space-around;
+  display: none;
+
+}
+
+.navmenulist.active {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  display: inline-block; 
+  padding: 10px 20px; 
+  margin: 20px; 
+  font-family: "CrimsonText-Regular"; 
+  font-size: 18px;
+  transition: all 0.3s ease; 
+  position: relative;
+  text-decoration: none;
+  color: #F3EEE8 ;
+}
+
+nav a:hover {
+  color: #F3EEE8; 
+  transform: scale(0.9); 
+}
+
+nav a:active {
+  transform: scale(0.5); 
+}
+
+a {
+  color: #c3d7ff; 
+  transform: scale(0.9); 
+  text-decoration: none;
+}
+
+.flecha {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.flecha:hover {
+  transform: translateY(5px);
+}
+
+.oculto {
+  display: none;
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #444;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.oculto.open {
+  display: block;
+}
+
+
+#contenedor_universo, #contendor_gprincipal {
+  position: relative;
+  flex-direction: center;
+}
+
+footer {
+  margin: 20px;
+  padding: 40px;
+  color: #F3EEE8; 
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden; 
+}
+
+.contenedor_galeria {
+  display: flex;
+  transition: transform 0.5s ease; 
+  width: 100%;
+}
+
+.galeriascroll {
+  flex: 0 0 100%; 
+}
+
+
+.galeriascroll img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.galeriascroll:hover img {
+  transform: scale(1.2); 
+}
+
+button.prev, button.next {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+button.prev {
+  left: 10px;
+  transform: rotate(90deg);
+}
+
+button.next {
+  right: 10px;
+  transform: rotate(-90deg);
+}
+
+#contenedor_contacto section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh; 
+  gap: 20px; 
+}
+
+#contenedor_contacto section h1, 
+#contenedor_contacto section h2 {
+  margin: 0; 
+}
+
+#contenedor_contacto section a { /*no entiendo pq el bottom queda malll*/
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px; 
+}
+
+#contenedor_contacto section a img {
+  width: 40px; 
+  height: 40px;
+  transition: transform 0.3s ease; 
+}
+
+#contenedor_contacto section a img:hover {
+  transform: scale(1.2); 
+}
+
+
+.contenedor_formulario {
+  text-align: center;
+  padding: 20px;
+}
+
+.contenedor_galaxy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+    flex-wrap: wrap; 
+}
+
+.imagen_galaxy img {
+  display: flex;
+  width: 300px; 
+  height: auto;
+  max-width: 100%; 
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+  font-family: "CrimsonText-Regular";
+  text-align: left;
+}
+
+fieldset {
+  border: none; 
+}
+
+legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block; 
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-family: "CrimsonText-Regular"; 
+}
+
+input[type="text"] {
+  font-family: "CrimsonText-Regular"; 
+  width: 100%; 
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid #F3EEE8;
+  color: #fffdf5; 
+  outline: none; 
+  background-color: transparent;
+  transition: all 0.3s ease; 
+}
+
+input[type="text"]:focus {
+  border-color: #4061A4;
+  box-shadow: 0 0 5px #4061A4;
+}
+
+input[type="submit"] {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;  
+  margin: 20px; 
+  font-family: "CrimsonText-Regular"; 
+  font-size: 20px;
+  transition: all 0.3s ease; 
+  position: relative;
+  text-decoration: none;
+  color: #F3EEE8 ;
+}
+
+input[type="submit"]:hover {
+  color: #F3EEE8; 
+  transform: scale(0.9); 
+}

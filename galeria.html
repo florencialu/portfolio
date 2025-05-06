@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/svg" href="Img/icons/luna.svg">
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navmenu">
+            <button id="menu-toggle">
+                <img src="Img/icons/menu.svg" alt="botón de menu">
+            </button>
+
+            <ul class="navmenulist">
+                <li> <a href="index.html"> Sobre mí</a> </li>
+                <li> <a href="galeria.html"> Trabajos</a> </li>
+                <li> <a href="contacto.html"> Contacto</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contendor_gprincipal">
+        <section>
+            <h1>Una mirada a mis <br> creaciones mas queridas</h1>
+            <p>Este portafolio no es solo una colección de trabajos, es una ventana a lo que me mueve. <br> Cada
+                proyecto es un reflejo de mi esfuerzo, creatividad y aprendizaje.</p>
+        </section>
+
+        <section class="galeria">
+            <button class="prev" id="prev" onclick=(navegar(-1))><img src="Img/icons/arrow.svg" alt="flecha izquierda"></button>
+           <div class="contenedor_galeria" id="contenedorGaleria">
+            <div class="galeriascroll"> <img src="Img/trabajos/marca.jpg" alt="identidad"> </div>
+            <div class="galeriascroll"> <img src="Img/trabajos/editorial.jpg" alt="editorial"> </div>
+            <div class="galeriascroll"> <img src="Img/trabajos/dispnoticias.jpg" alt="web"> </div>
+            <div class="galeriascroll"> <img src="Img/trabajos/afiche.jpg" alt="web"> </div>
+            <div class="galeriascroll"> <img src="Img/trabajos/uiweb.jpg" alt="web"> </div>
+        </div>
+            <button class="next" id="next" onclick=(navegar(1))><img src="Img/icons/arrow.svg" alt="flecha derecha"></button>
+        </section>
+    </main>
+
+    <article>
+        <h3>Identidad Visual para Barfy</h3>
+        <p>Barfy es un petshop que buscaba una identidad visual fresca y amigable que conectara con amantes de las mascotas. <br> proyecto fue parte de mi curso de Diseño Gráfico 3, donde me enfoqué en crear un diseño que reflejara confianza y cercanía.</p>
+        <p>En el proceso, desarrollé un logotipo acompañado de una paleta de colores vibrantes que representa la energía y el cariño que caracterizan a las mascotas. <br> También diseñé materiales promocionales como tarjetas, packaging y contenido para redes sociales.</p>
+        <p>Este trabajo me permitió experimentar con conceptos de branding para un público específico, logrando una identidad sólida y memorable para la marca.</p>
+    </article>
+    
+
+    <section id="contenedor_contacto">
+        <h1>¡Trabajemos juntos <br>para darle vida a tu visión!</br> </h1>
+        <h4>Con un <i>“hola”</i> ya es suficiente para empezar</h4>
+        <div class="iconos">
+            <a href="https://www.behance.net/florencia-luna" target="_blank">
+                <img src="Img/icons/behance.svg" alt="Behance">
+            </a>
+            <a href="https://www.instagram.com/florenciaflw" target="_blank">
+                <img src="Img/icons/instragram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/feed/" target="_blank">
+                <img src="Img/icons/linkedin.svg" alt="Linkedin">
+            </a>
+        </div>
+    </section>
+
+    <aside>
+        <h3>Sos más de mandar mails? <br> Hace <i> <a href="contacto.html"> click Acá!</a> </i></h3>
+    </aside>
+
+
+    <footer>
+        <p>Encontrame en</p>
+        <nav>
+            <a href="https://www.behance.net/florencia-luna" target="_blank"> BEHANCE</a>
+            <a href="https://www.instagram.com/florenciaflw" target="_blank"> INSTAGRAM</a>
+        </nav>
+        <p>Todos los derechos reservados a Florencia Luna </p>
+    </footer>
+
+    <script src="funciones.js"></script>
+
+
+</body>
+
+</html>
